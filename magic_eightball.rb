@@ -66,7 +66,7 @@ class MagicEightBall
   end
 
   def create_answer
-    @user_answer = gets.strip
+    @user_answer = gets.strip.capitalize
     if (@new_answers.include?(@user_answer))
       puts "You do realize thats already an answer... Right?!".colorize(:red)
       sleep(3)
